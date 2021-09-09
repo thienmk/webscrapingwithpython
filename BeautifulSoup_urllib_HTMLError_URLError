@@ -1,0 +1,9 @@
+# About BeautifuSoup: tries to make sense of the nonsensical; it helps fromat and organize the messy web by fixing bad HTML and presenting us with easily traversable Python objects representing XML structures.
+
+# urllib: us a package that collects several modules for working with URLS:
+  # urllib.request: for opening and reading URLs
+  # urllib.error: containing the exceptions raised by urllib.request
+  # urllib.parse: for parsing URLs - parsing functions focus on splitting a URL string into its components, or on combining URL components into a URL string.
+  # urllib.robotparser: for parsing robots.txt files
+ 
+ 
