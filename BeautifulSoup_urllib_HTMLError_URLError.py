@@ -8,4 +8,26 @@
  
  # HTMLError_URLError
  
- from 
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+from urllib.error import HTMLError
+from urllib.error import URLError
+
+try:
+    html = urlopen('http://www.pythonscraping.com/pages/page1.html')
+    bs = BeautifulSoup(html.read(), 'lxml')
+    title = bs.body.h1
+except HTTPError as e:
+    print(e)
+except URLError as e:
+    print('the server is not found')
+except AttributeError as e:
+    print('tag was not found')
+else:
+    print('web is ok')
+    if title == None:
+        print('Title could not be found')
+    else:
+        print(title)
+
+
